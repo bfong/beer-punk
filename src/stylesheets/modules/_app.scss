@@ -1,0 +1,11 @@
+$max-width: 66rem;
+$breakpoint: 48rem;
+$border-radius: 0.3em;
+
+
+@mixin beer-text() {
+
+  font-size: 1.17rem;
+  font-weight: bold;
+}
+
