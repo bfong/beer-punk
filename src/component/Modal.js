@@ -7,9 +7,7 @@ const propTypes = {
 }
 
  class Modal extends Component {
-    constructor(props) {
-        super(props);
-    }
+  
     onClose = (e) => {
         e.stopPropagation ();
         this.props.onClose && this.props.onClose(e);

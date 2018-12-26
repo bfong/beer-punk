@@ -15,7 +15,7 @@ class App extends Component {
       isLoading: false,
       view: 'flex-25',
       sort: 'id',
-      modalImage: 'https://cdn.pixabay.com/photo/2015/07/10/17/53/cheers-839865_1280.jpg',
+      modalImage: 'https://i.imgur.com/jBj0pof.jpg',
       flavorText: "Mmmmm! Tasty!",
       show: false,
       beers: []
@@ -138,8 +138,7 @@ class App extends Component {
 
       const { isLoading } = this.state;
       const { view } = this.props;
-      const { modalImage } = this.props;
-      const { flavorText } = this.props;
+
       const showBeers = this.renderBeers();
       
       if (isLoading) {
@@ -161,9 +160,9 @@ class App extends Component {
               {showBeers}
           </div>
 
-          <div className="generic-center">
+          {/* <div className="generic-center">
               <button type="button" onClick={this.showModal}> Test: Show Modal</button>
-          </div>
+          </div> */}
         <Modal onClose={this.showModal} show={this.state.show}>
               <img className="modal-image" src={this.state.modalImage} alt={this.state.flavorText}></img>
               <p className="modal-text">{this.state.flavorText}</p>
